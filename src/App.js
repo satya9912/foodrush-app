@@ -28,7 +28,7 @@ const routes = [
     element: <App />,
     errorElement: <Error />,// App is the root element
     children: [
-      { path: '/foodrush-app', element: <Body /> }, // Default route
+      { path: '/', element: <Body /> }, // Default route
       { path: '/about', element: <About /> },
       { path: '/contact', element: <Contact /> },
       { path: '/instamart', element: <Instamart /> },
