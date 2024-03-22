@@ -38,6 +38,7 @@ const routes = [
   },
   {path: '/login', element: <Login />}
 ]
-export const appRouter = createBrowserRouter(routes, { basename: "/foodrush-app" });
+export const appRouter = createBrowserRouter(routes);
+const router = createBrowserRouter(routes, { basename: "/foodrush-app" })
 
 export default App;
