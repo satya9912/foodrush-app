@@ -1,3 +1,4 @@
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Body from "./components/Body";
@@ -21,13 +22,13 @@ function App() {
   );
 }
 
-export const appRouter = createBrowserRouter([
+const routes = [
   {
     path: '/', 
     element: <App />,
     errorElement: <Error />,// App is the root element
     children: [
-      { path: '/', element: <Body /> }, // Default route
+      { path: '/foodrush-app', element: <Body /> }, // Default route
       { path: '/about', element: <About /> },
       { path: '/contact', element: <Contact /> },
       { path: '/instamart', element: <Instamart /> },
@@ -36,6 +37,7 @@ export const appRouter = createBrowserRouter([
     ],
   },
   {path: '/login', element: <Login />}
-]);
+]
+export const appRouter = createBrowserRouter(routes, { basename: "/foodrush-app" });
 
 export default App;

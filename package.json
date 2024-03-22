@@ -2,7 +2,7 @@
   "name": "foodrush",
   "homepage": "https://satya9912.github.io/foodrush-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^5.17.0",
