@@ -12,7 +12,7 @@ const Header = () => {
         <div className="fixed right-0 left-0 top-0 bg-gray-100 shadow-md h-24">
             <div className="flex justify-between align-middle mb-9">
                 <div>
-                    <Link href="/">
+                    <Link href="/foodrush-app">
                     <img alt="logo" className="h-24 w-24 rounded-[50%] object-fill ml-2" src={logo}/>
                     </Link>
                 </div>
