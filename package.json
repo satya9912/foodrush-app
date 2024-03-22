@@ -1,6 +1,6 @@
 {
-  "homepage": "https://satya9912.github.io/foodrush",
   "name": "foodrush",
+  "homepage": "https://satya9912.github.io/foodrush-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
