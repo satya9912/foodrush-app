@@ -18,16 +18,16 @@ const Header = () => {
                 </div>
                 <div className="static">
                     <ul className="flex py-10">
-                        <li className="p-2 hover:bg-[#D97919] hover:text-white rounded-md" to={"/"}>
-                            <NavLink>Home</NavLink>
+                        <li className="p-2 hover:bg-[#D97919] hover:text-white rounded-md">
+                            <NavLink to={"/"}>Home</NavLink>
                         </li>
 
-                        <li className="p-2 hover:bg-[#D97919] hover:text-white rounded-md" to={"/about"}>
-                            <NavLink>About </NavLink>
+                        <li className="p-2 hover:bg-[#D97919] hover:text-white rounded-md">
+                            <NavLink to={"/about"}>About </NavLink>
                         </li>
 
-                        <li className="p-2 hover:bg-[#D97919] hover:text-white rounded-md" to={"/contact"}>
-                            <NavLink>Contact </NavLink>
+                        <li className="p-2 hover:bg-[#D97919] hover:text-white rounded-md">
+                            <NavLink to={"/contact"}>Contact </NavLink>
                         </li>
                         {/* <Link className="px-6" to={"/instamart"}>
                             <li>Instamart</li>
