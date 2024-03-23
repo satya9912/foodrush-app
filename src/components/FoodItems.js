@@ -2,6 +2,13 @@ import React from 'react';
 import { MENU_IMAGE_CDN_URL } from '../constants';
 import { useDispatch } from 'react-redux';
 import { removeItem, addItem, decreaseQuantity } from '../utils/cartSlice';
+import { toast, ToastContainer } from 'react-toastify';
+
+export function notify(){
+    toast.success("item removed from cart" , {
+        position: 'bottom-right'
+    });
+}
 
 function FoodItems(props) {
     const { name, price, imageId, defaultPrice, id, qty } = props.item;
@@ -11,6 +18,7 @@ function FoodItems(props) {
 
     const handleDelete = (id) => {
         dispatch(removeItem(id));
+        notify();
     }
 
     return (

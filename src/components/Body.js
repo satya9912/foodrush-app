@@ -29,7 +29,8 @@ const Body = () => {
              value={searchTXT}
              onChange={(e) => setSearchText(e.target.value)}/>
       <button type="submit" 
-              className="bg-orange-600 h-13 py-2 px-4 w-24 rounded-md hover:" 
+              className="bg-orange-600 h-13 py-2 px-3 w-24 rounded-md font-semibold text-white
+                        text-lg" 
               onClick={() => {
                 let data = filteredData(allRestaurants, searchTXT);
                 setFilteredRestaurants(data);

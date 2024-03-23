@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { notify } from "../components/FoodItems";
 
 const cartSlice = createSlice({
     name: "cart",
@@ -28,6 +29,7 @@ const cartSlice = createSlice({
                 state.totalPrice -= parseInt(state.items[existingItemIndex].price);
                 const tempItems = state.items.filter( (item) => item.id !== action.payload)
                 state.items = tempItems;
+                notify();
             }
         },
         removeItem: (state, action) => {

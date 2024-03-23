@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { useSelector } from "react-redux";
 import logo from "../utils/images/icon.jpg"
@@ -18,25 +18,27 @@ const Header = () => {
                 </div>
                 <div className="static">
                     <ul className="flex py-10">
-                        <Link className="px-6" to={"/"}>
-                            <li>Home</li>
-                        </Link>
-                        <Link className="px-6" to={"/about"}>
-                            <li>About</li>
-                        </Link>
-                        <Link className="px-6" to={"/contact"}>
-                            <li>Contact</li>
-                        </Link>
+                        <li className="p-2 hover:bg-[#D97919] hover:text-white rounded-md" to={"/"}>
+                            <NavLink>Home</NavLink>
+                        </li>
+
+                        <li className="p-2 hover:bg-[#D97919] hover:text-white rounded-md" to={"/about"}>
+                            <NavLink>About </NavLink>
+                        </li>
+
+                        <li className="p-2 hover:bg-[#D97919] hover:text-white rounded-md" to={"/contact"}>
+                            <NavLink>Contact </NavLink>
+                        </li>
                         {/* <Link className="px-6" to={"/instamart"}>
                             <li>Instamart</li>
                         </Link> */}
 
                         <Link className="px-6" to={"/cart"}>
                             <img className="w-11 mr-2" src="https://cdn-icons-png.flaticon.com/128/891/891462.png"/>
-                            <span className="text-lg w-18 h-7 absolute top-7 right-16 bg-yellow-500 rounded-lg p-[3px] mb-1">{cartItems.length}</span>
+                            <span className="h-7 w-4 absolute top-7 right-[80px] bg-orange-600 rounded-lg text-center mb-1 p-1 text-white text-sm">{cartItems.length}</span>
                         </Link>
 
-                        <Link to={"/login"}> Login </Link>
+                        <NavLink className="p-2 hover:bg-[#D97919] hover:text-white rounded-md" to={"/login"}> Login </NavLink>
 
                     </ul>
                 </div>
