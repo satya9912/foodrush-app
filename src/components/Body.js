@@ -1,7 +1,6 @@
 import RestaurantCard from "./RestaurantCard";
 // import { restaurantList} from "../constants";
-import { useState, useEffect } from "react";
-import Shimmer from "./Shimmer";
+import { useState } from "react";
 import {Link} from "react-router-dom";
 import { filteredData } from "../utils/helper";
 import useResData from "../hooks/useResData";

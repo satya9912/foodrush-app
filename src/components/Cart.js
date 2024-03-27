@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import FoodItems from './FoodItems';
-import { clearCart } from '../utils/cartSlice';
-import { useState } from 'react';
+// import { clearCart } from '../utils/cartSlice';
 import EmptyCart from './EmptyCart';
 
 function Cart() {
@@ -10,11 +9,11 @@ function Cart() {
     const cartItems = useSelector(store => store.cart.items);
     const totalPrice = useSelector(store => store.cart.totalPrice);
     console.log(totalPrice)
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
 
-    const handleClear = () => {
-        dispatch(clearCart());
-    }
+    // const handleClear = () => {
+    //     dispatch(clearCart());
+    // }
 
     if(cartItems.length === 0 ) return  <EmptyCart />
 

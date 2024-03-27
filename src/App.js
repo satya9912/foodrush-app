@@ -11,7 +11,7 @@ import RestaurantMenu from "./components/RestaurantMenu";
 import Instamart from "./components/Instamart";
 import Cart from "./components/Cart";
 import Login from "./components/Login";
-import { toast, ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {

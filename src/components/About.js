@@ -9,7 +9,7 @@ const About = () => {
         <p className='w-[600px] text-[#545454] text-xl font-semibold mt-11'>"Experience the delicious rush of goodness with FoodRush meals, lighting up your taste buds and enhancing your well-being."</p>
       </div>
         <div>
-          <img src={aboutPic} />
+          <img alt='about' src={aboutPic} />
         </div>
     </div>
   )

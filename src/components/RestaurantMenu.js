@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { IMAGE_CDN_URL } from '../constants';
 import useRestaurant from '../hooks/useRestaurant';
 import { MENU_IMAGE_CDN_URL } from '../constants';
 import { useDispatch } from 'react-redux';
 import { addItem } from '../utils/cartSlice';
 import MenuSkeleton from '../skeletons/MenuSkeleton';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 function RestaurantMenu() {
 
@@ -34,7 +34,7 @@ function RestaurantMenu() {
     <div className=''>
       <div className='bg-[#131921]  p-5 rounded-md  mt-20 mb-3 border-2 flex justify-center align-top'>
         <div className='mr-3'>
-          <img className=' rounded-md object-contain w-60 mr-5' src={IMAGE_CDN_URL + cloudinaryImageId} />
+          <img alt='restaurant-img' className=' rounded-md object-contain w-60 mr-5' src={IMAGE_CDN_URL + cloudinaryImageId} />
         </div>
         <div>
             <h1 className='font-bold text-xl text-white mb-3'>{name}</h1>
@@ -42,7 +42,7 @@ function RestaurantMenu() {
             <h1 className='font-semibold text-base mb-1 text-white'>{costForTwoMessage}</h1>
             <div className="flex">
             <span className='mr-1 text-lg mb-1 text-white'>{avgRating}</span>
-            <img className="h-6" src='https://cdn-icons-png.flaticon.com/128/1828/1828884.png'/>
+            <img alt='img' className="h-6" src='https://cdn-icons-png.flaticon.com/128/1828/1828884.png'/>
             <span className='text-white'>({totalRatingsString})</span>
             </div>
             <p className='text-base text-white'>Order above 149 for discounted delivery fee</p>
@@ -60,12 +60,12 @@ function RestaurantMenu() {
               <p className='text-gray-400 mt-1'>{item.description}</p>  
               <div className='flex'>
               <span className='mr-[1px] mt-1 font-bold text-base'>{item.ratings.aggregatedRating.rating ? item.ratings.aggregatedRating.rating: 3.9}</span>
-              <img className="h-5 mt-[6px]" src='https://cdn-icons-png.flaticon.com/128/1828/1828884.png'/>
+              <img alt='icon' className="h-5 mt-[6px]" src='https://cdn-icons-png.flaticon.com/128/1828/1828884.png'/>
               </div>
 
             </div>
             {item.imageId ? <div className='mb-2'>
-              <img className='my-3 object-cover w-20' src={MENU_IMAGE_CDN_URL + item.imageId}/>
+              <img alt='icon' className='my-3 object-cover w-20' src={MENU_IMAGE_CDN_URL + item.imageId}/>
               <button type="button" onClick={() => handleAdd(item)} className='bg-[#d97919] px-5 py-2 text-sm rounded-md'>Add +</button>
             </div> :  <button type="button" onClick={() => handleAdd(item)} className='bg-[#d97919] rounded-md h-10 px-5 py-2  mt-2'>Add +</button>}
           </div>

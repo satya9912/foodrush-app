@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div className='mt-32 flex justify-around mb-4'>
       <div>
-        <img src={contactPic} />
+        <img alt='contact-pic' src={contactPic} />
       </div>
       <div className='mr-44'>
         <form>
