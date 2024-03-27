@@ -1,6 +1,6 @@
 {
   "name": "foodrush",
-  "homepage": "",
+  "homepage": "https://satya9912.github.io/foodrush-app",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -18,7 +18,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh",
+    "deploy": "gh-pages -d build", 
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
