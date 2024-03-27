@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "public": "build",
+    "rewrites": [
+      {
+        "source": "/foodrush-app/**",
+        "destination": "/foodrush-app/index.html"
+      }
+    ]
+  }
+}
+
