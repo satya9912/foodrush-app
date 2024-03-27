@@ -24,7 +24,7 @@ function RestaurantMenu() {
 
   const {restaurantMenu, menuItems} = useRestaurant();
   // console.log(menuItems);
-  // console.log(restaurantMenu);
+  console.log(restaurantMenu);
   const {name, cloudinaryImageId, city, costForTwoMessage, avgRating, totalRatingsString} = restaurantMenu;
 
   

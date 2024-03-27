@@ -18,8 +18,8 @@ const useRestaurant = () => {
       async function getRestaurantInfo(){
         const data = await fetch(menuURL);
         const json = await data.json();
-        // console.log(json)
-        const resData = json?.data?.cards[0]?.card?.card?.info
+        console.log(json)
+        const resData = json?.data?.cards[2]?.card?.card?.info
         // console.log(resData);
         setRestaurantMenu(resData);
         // const menuItems = json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2].card.card.itemCards.card.info
