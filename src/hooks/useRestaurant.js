@@ -7,9 +7,11 @@ const useRestaurant = () => {
   const { resId } = useParams();
   const menuURL = getMenuURL(resId);
 
+  // eslint-disable-next-line
   useEffect(() => {
     getRestaurantInfo();
-  }, [getRestaurantInfo]); // Include getRestaurantInfo in the dependency array
+    // eslint-disable-next-line
+  },[]); // Empty dependency array
 
   const [restaurantMenu, setRestaurantMenu] = useState([]);
   const [menuItems, setMenuItems] = useState([]);
