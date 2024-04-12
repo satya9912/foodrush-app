@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/foodrush-app/static/css/main.a8df7700.css",
-    "main.js": "/foodrush-app/static/js/main.072c0af5.js",
+    "main.js": "/foodrush-app/static/js/main.b59abc6e.js",
     "static/media/about.png": "/foodrush-app/static/media/about.33d6509d3448a197de2b.png",
     "static/media/contact.png": "/foodrush-app/static/media/contact.ee028a2ab6d1136141a8.png",
     "static/media/emptyCart.png": "/foodrush-app/static/media/emptyCart.9e206cfb5526effa1402.png",
     "index.html": "/foodrush-app/index.html",
     "main.a8df7700.css.map": "/foodrush-app/static/css/main.a8df7700.css.map",
-    "main.072c0af5.js.map": "/foodrush-app/static/js/main.072c0af5.js.map"
+    "main.b59abc6e.js.map": "/foodrush-app/static/js/main.b59abc6e.js.map"
   },
   "entrypoints": [
     "static/css/main.a8df7700.css",
-    "static/js/main.072c0af5.js"
+    "static/js/main.b59abc6e.js"
   ]
 }
