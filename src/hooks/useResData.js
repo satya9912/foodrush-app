@@ -13,10 +13,10 @@ const useResData = () => {
     const data = await fetch(swiggy_URL);
     const json = await data.json();
     // console.log(json);
-    console.log(json);
+    // console.log(json);
     const resData = json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
     // const resData = json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;
-    // console.log(resData);
+    console.log(resData);
     setFilteredRestaurants(resData);
     setAllRestaurants(resData);
     // console.log(allRestaurants);

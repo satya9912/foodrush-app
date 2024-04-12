@@ -10,8 +10,6 @@ const Body = () => {
   
   const [searchTXT, setSearchText] = useState('');
   const {allRestaurants, filteredRestaurants, setFilteredRestaurants} = useResData();
-  console.log(filteredRestaurants);
-  console.log(allRestaurants);
 
   // if(filteredRestaurants.length === 0) return <h1>No restaurant match your input...!</h1>
 

@@ -20,7 +20,7 @@ const RestaurantCard = ({
         <div className="w-80 p-3 m-3 shadow-md transition ease-in-out hover:w-[318px] duration-700">
             <div>
             <img 
-            className=" w-72 rounded-3xl p-2"
+            className=" w-72 h-44 object-cover rounded-3xl p-2"
             alt="res-logo" src={IMAGE_CDN_URL + cloudinaryImageId} />
             </div>
             <div className="pl-3">

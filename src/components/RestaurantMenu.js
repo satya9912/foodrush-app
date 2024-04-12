@@ -34,7 +34,7 @@ function RestaurantMenu() {
     <div className=''>
       <div className='bg-[#131921]  p-5 rounded-md  mt-20 mb-3 border-2 flex justify-center align-top'>
         <div className='mr-3'>
-          <img alt='restaurant-img' className=' rounded-md object-contain w-60 mr-5' src={IMAGE_CDN_URL + cloudinaryImageId} />
+          <img alt='restaurant-img' className=' rounded-md object-contain w-60 h-48 mr-5' src={IMAGE_CDN_URL + cloudinaryImageId} />
         </div>
         <div>
             <h1 className='font-bold text-xl text-white mb-3'>{name}</h1>
